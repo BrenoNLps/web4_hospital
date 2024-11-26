@@ -1,5 +1,4 @@
-/* MarcarConsulta.css */
-
+/* Estiliza o contêiner principal */
 .container {
     display: flex;
     justify-content: center;
@@ -8,6 +7,7 @@
     padding: 20px; /* Adiciona espaçamento nas bordas */
 }
 
+/* Estiliza o formulário */
 .form-wrapper {
     background-color: white;
     padding: 30px;
@@ -18,22 +18,26 @@
     margin: 0 auto; /* Centraliza o conteúdo */
 }
 
+/* Estilo do título */
 h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
+/* Estiliza o formulário */
 form {
     display: flex;
     flex-direction: column;
 }
 
+/* Estilo dos labels */
 label {
     margin-bottom: 5px;
     color: #555;
 }
 
+/* Estilo dos campos de entrada */
 select,
 input[type="date"],
 input[type="time"],
@@ -49,11 +53,13 @@ textarea {
     outline: none;
 }
 
+/* Estilo da área de texto */
 textarea {
     resize: none;
     height: 100px;
 }
 
+/* Estilo do botão */
 button {
     background-color: #4CAF50;
     color: white;
@@ -69,6 +75,7 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Estilo da mensagem */
 span {
     display: block;
     text-align: center;
@@ -76,6 +83,7 @@ span {
     color: red;
 }
 
+/* Estilo do botão de logout */
 .logout-button {
     margin-top: 20px;
     padding: 10px 15px;
@@ -88,4 +96,14 @@ span {
 
 .logout-button:hover {
     background-color: #c62828; /* Tom mais escuro no hover */
+}
+
+/* Estiliza a imagem do perfil */
+.profile-image {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Faz a imagem cobrir a área sem distorcer */
+    margin: 20px auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
 }

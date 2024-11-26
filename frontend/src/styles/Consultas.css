@@ -39,3 +39,13 @@ h1 {
     color: red; /* Cor vermelha para mensagens de erro */
     text-align: center; /* Centraliza a mensagem de erro */
 }
+
+/* Estiliza a imagem do perfil */
+.profile-image {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Faz a imagem cobrir a área sem distorcer */
+    margin: 20px auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+}

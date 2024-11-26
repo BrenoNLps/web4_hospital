@@ -3,3 +3,5 @@
 {"name":"pedro","email":"pedro@gmail.com","password":"senha","userType":"patient"}
 {"name":"joao","email":"joao@gmail.com","password":"senha1","userType":"doctor"}
 {"name":"lord","email":"lord@gmail.com","password":"lord1","userType":"admin"}
+{"name":"marcos","email":"marcos@gmail.com","password":"senha","userType":"patient"}
+{"name":"john","email":"john@gmail.com","password":"senha","userType":"patient","cep":"13564520","address":"Rua Rodolfo Luporini, Parque Industrial, São Carlos - SP"}

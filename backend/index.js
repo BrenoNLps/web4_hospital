@@ -43,7 +43,7 @@ const readUsersFromFile = () => {
 
 // Rota para registrar um novo usuário
 app.post('/register', (req, res) => {
-  const { name, email, password, userType } = req.body;
+  const { name, email, password, userType, cep, address } = req.body; //
 
   const users = readUsersFromFile();
 
@@ -52,7 +52,7 @@ app.post('/register', (req, res) => {
     return res.status(400).json({ message: 'Usuário com este nome ou e-mail já existe.' });
   }
 
-  const newUser = { name, email, password, userType };
+  const newUser = { name, email, password, userType, cep, address }; // Incluído CEP e endereço
   const userString = JSON.stringify(newUser) + '\n';
 
   fs.appendFile(filePath, userString, (err) => {
@@ -89,4 +89,30 @@ app.get('/marcar-consulta', authenticateToken, checkRole('patient'), (req, res) 
 
 app.get('/gerenciar', authenticateToken, checkRole('admin'), (req, res) => {
   res.json({ message: 'Aqui você pode gerenciar o sistema, administrador!' });
+});
+
+// Função para consultar endereço pelo CEP (opcional, caso precise no backend)
+app.get('/cep/:cep', async (req, res) => {
+  const { cep } = req.params;
+
+  try {
+    const formattedCep = cep.replace(/\D/g, '');
+    if (formattedCep.length !== 8) {
+      return res.status(400).json({ message: 'CEP inválido' });
+    }
+
+    const response = await fetch(`https://viacep.com.br/ws/${formattedCep}/json/`);
+    if (!response.ok) {
+      throw new Error('Erro ao buscar o endereço');
+    }
+
+    const addressData = await response.json();
+    if (addressData.erro) {
+      return res.status(404).json({ message: 'CEP não encontrado' });
+    }
+
+    res.status(200).json(addressData);
+  } catch (error) {
+    res.status(500).json({ message: 'Erro ao consultar o CEP', error: error.message });
+  }
 });
