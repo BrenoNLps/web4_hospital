@@ -1,0 +1,41 @@
+/* Estiliza a caixa que contém as consultas */
+.consultas-container {
+    background-color: white; /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    max-width: 80%; /* Largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+/* Remove a lista padrão e aplica display flex */
+ul {
+    list-style-type: none; /* Remove a bolinha lateral da lista */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Aplica display flex para a lista */
+    flex-direction: column; /* Mantém os itens em coluna */
+}
+
+/* Estiliza cada item de consulta */
+.consulta-item {
+    border-bottom: 1px dashed #ccc; /* Linha tracejada */
+    padding: 15px 0; /* Espaçamento entre as consultas */
+    color: black; /* Cor da fonte preta */
+    display: flex; /* Aplica display flex aos itens */
+    justify-content: space-between; /* Distribui espaço entre os itens */
+}
+
+.consulta-item:last-child {
+    border-bottom: none; /* Remove a linha tracejada do último item */
+}
+
+/* Estiliza o título da página */
+h1 {
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para a mensagem de erro */
+.error {
+    color: red; /* Cor vermelha para mensagens de erro */
+    text-align: center; /* Centraliza a mensagem de erro */
+}

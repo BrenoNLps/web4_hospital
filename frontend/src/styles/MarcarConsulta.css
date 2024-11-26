@@ -1,0 +1,91 @@
+/* MarcarConsulta.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da viewport */
+    padding: 20px; /* Adiciona espaçamento nas bordas */
+}
+
+.form-wrapper {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+select,
+input[type="date"],
+input[type="time"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+span {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.logout-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #c62828; /* Tom mais escuro no hover */
+}

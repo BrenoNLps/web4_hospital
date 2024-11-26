@@ -1,0 +1,81 @@
+/* Login.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  
+  .form-wrapper {
+
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Adiciona espaço abaixo do formulário */
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  /* Estilo do botão de Login */
+  button[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049; /* Tom mais escuro de verde no hover */
+  }
+  
+  /* Estilo do botão de Voltar */
+  .button-back {
+    margin-top: 10px; /* Adiciona espaço acima do botão de voltar */
+    background-color: #2196F3; /* Azul */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-back:hover {
+    background-color: #1976D2; /* Tom mais escuro de azul no hover */
+  }
+  
+  p {
+    color: red; /* Cor do texto de erro */
+  }
+  

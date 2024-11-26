@@ -1,0 +1,5 @@
+{"name":"nome","email":"gmail@gmail.com","password":"senha","userType":"patient"}
+{"name":"breno","email":"breno@gmail.com","password":"senha","userType":"doctor"}
+{"name":"pedro","email":"pedro@gmail.com","password":"senha","userType":"patient"}
+{"name":"joao","email":"joao@gmail.com","password":"senha1","userType":"doctor"}
+{"name":"lord","email":"lord@gmail.com","password":"lord1","userType":"admin"}
